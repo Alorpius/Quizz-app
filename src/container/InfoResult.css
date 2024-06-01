@@ -1,0 +1,17 @@
+
+.result{
+    align-items: center;
+    text-align: center;
+    
+}
+table{
+   font-size: 15px;
+   font-weight: 500;
+
+   border-radius: 10px;
+   margin: 10px auto;
+   border-collapse: collapse;
+}
+tr{
+    border: 1px solid gray;
+}

@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Main from "./container/Main";
+import { jsQuizz } from "./constance";
+import "./App.css"
 function App() {
+  // useEffect(() => {
+  // getQuestions();
+  //}, []);
+
+  //const getQuestions = async () => {
+  //try {
+  //const response = await fetch(
+  //"https://644982a3e7eb3378ca4ba471.mockapi.io/questions"
+  //);
+  //const questionResponse = await response.json();
+  //console.log(questionResponse);
+  //} catch (error) {}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Main questions={jsQuizz.questions} />
     </div>
   );
 }
